@@ -53,7 +53,7 @@ public class Drone implements MqttCallback, IMqttActionListener {
 	        memoryPersistence = 
 	            new MemoryPersistence();
 	        String serverURI = 
-	            "tcp://iot.eclipse.org:1883";
+	            "tcp://localhost:1883";
 	        clientId = MqttAsyncClient.generateClientId();
 	        client = new MqttAsyncClient(
 	                       serverURI, clientId, 
